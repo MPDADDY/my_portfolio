@@ -13,6 +13,7 @@
   margin: 0;
   text-decoration: none;
   box-sizing: border-box;
+  list-style-type: none;
 }
 
 body {
@@ -29,10 +30,20 @@ div.logo-container {
   padding: 20px;
   flex-direction: row;
   justify-content: space-between;
+  background-color: var(--white);
 }
 
 div.logo {
   width: 82px;
+}
+
+.social a {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: left;
+  padding: 20px  0;
+  color: var(--primary2);
 }
 
 div.logo a {
@@ -81,16 +92,7 @@ img {
   color: var(--newtrals);
 }
 
-.social h3 {
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 24px;
-  text-align: left;
-  padding: 20px  0;
-  color: var(--primary2);
-}
-
-div.social_icons {
+ul.social_icons {
   display: flex;
   gap: 1rem;
 }

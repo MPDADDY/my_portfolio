@@ -25,7 +25,7 @@ nav {
   background-color: var(--white);
 }
 
-nav.logo-container {
+div.logo-container {
   display: flex;
   padding: 20px;
   flex-direction: row;
@@ -52,7 +52,7 @@ div.logo a {
   color: var(--primary);
 }
 
-div.bars i {
+nav.bars i {
   color: var(--tertiary);
   font-size: var(--small_font);
   width: 20px;

@@ -54,7 +54,7 @@ div.logo {
   font-weight: 500;
   line-height: 24px;
   text-align: left;
-  padding: 20px  0;
+  padding: 20px 0;
   color: var(--primary2);
 }
 
@@ -71,7 +71,6 @@ nav.bars i {
 }
 
 /** header section */
-
 .header {
   background-image: url(images/header-shapes\ mobile.png);
   background-color: var(--white);
@@ -188,7 +187,6 @@ section.work_section ul li > img {
   width: 10px;
 }
 
-/* nn */
 .about_myself p {
   font-weight: 400;
   font-size: 16px;
@@ -203,7 +201,6 @@ article.work p {
   line-height: 24px;
 }
 
-/* njnk */
 section.work_section > ul.languages {
   display: flex;
   flex-direction: row;
@@ -234,8 +231,12 @@ section.about_me {
   grid-template-columns: auto;
   gap: 24px;
   background-color: var(--white);
-  padding: 114px 24px 114px 24px;
   border-top-right-radius: var(--radiusL);
+  text-align: left;
+}
+
+.about_myself {
+  padding: 20px;
 }
 
 .about_myself h1 {
@@ -243,6 +244,7 @@ section.about_me {
   font-weight: 700;
   font-size: 40px;
   line-height: 52px;
+  margin-top: 4rem;
 }
 
 .lets_connect {
@@ -287,6 +289,16 @@ button.my_resume {
   padding: 2rem 0;
 }
 
+article.contact_me p {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28px;
+  text-align: center;
+  color: var(--primaryb50);
+  margin: auto;
+  padding: 12px 12px 1.2rem 12px;
+}
+
 ul.technologies_container-languages > li > p {
   font-size: 15px;
   font-weight: 500;
@@ -296,4 +308,74 @@ ul.technologies_container-languages > li > p {
 
 .border_bottom {
   border-bottom: 2px solid #dfe1e6;
+}
+
+/* contact form */
+article.contact_me {
+  background-image: url(images/contact_form_shapes-mobile@2x.png);
+  background-size: 98% 92%;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: auto;
+  margin-top: 3rem;
+  border-top-left-radius: var(--radiusL);
+  background-color: var(--primaryb400);
+  padding: 5rem 20px 20px 20px;
+}
+
+article.contact_me h2 {
+  text-align: center;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 52px;
+  color: var(--white);
+}
+
+.form {
+  display: grid;
+  grid-template-columns: auto;
+  gap: 1rem;
+  border: none;
+}
+
+input[type=text],
+input[type=email],
+input[type=submit],
+input[type=textarea] {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+}
+
+textarea {
+  padding: 20px;
+  background-color: var(--white);
+  outline: none;
+  border: none;
+  resize: none;
+  border-radius: 8px;
+  text-align: left;
+}
+
+.form_btn {
+  max-width: 120px;
+  padding: 3px 14px;
+  margin-top: -2.5rem;
+  margin-bottom: 2rem;
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: var(--primaryb400);
+}
+
+.divider {
+  height: 2px;
+  width: 134px;
+  background-color: #0d151e;
+  margin: auto;
+  border: none;
 }

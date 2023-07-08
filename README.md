@@ -28,8 +28,6 @@
 
 # 📖 [my_portfolio] <a name="about-project"></a>
 
-> Describe your project in 1 or 2 sentences.
-
 **[Porfolio]**  wep page  will be showing some the projects the author have created.
 
 ## 🛠 Built With <a name="built-with"></a>

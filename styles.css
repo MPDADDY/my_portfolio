@@ -152,12 +152,18 @@ div.canopy h5 {
   vertical-align: center;
 }
 
-section.work_section ul {
+/*section.work_section ul {
   display: flex;
-  flex-direction: row;
+  /*flex-direction:row;
+}
+*/
+
+.canopy_languages {
+  display: flex;
 }
 
 ul.languages li {
+  float: left;
   background-color: var(--primaryb50);
   padding: 4px 12px 4px 12px;
   border-radius: 8px;

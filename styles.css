@@ -192,6 +192,11 @@ div.canopy {
   gap: 12px;
 }
 
+article.contact_me img {
+  width: 100%;
+  float: right;
+}
+
 section.work_section ul li > img {
   width: 10px;
 }
@@ -314,7 +319,7 @@ ul.technologies_container-languages > li > p {
 /* contact form */
 article.contact_me {
   background-image: url(images/contact_form_shapes-mobile@2x.png);
-  background-size: 98% 92%;
+  background-size: 100% 92%;
   background-repeat: no-repeat;
   width: 100%;
   height: auto;
@@ -371,6 +376,17 @@ textarea {
   letter-spacing: 0.03em;
   text-align: center;
   color: var(--primaryb400);
+  text-decoration: none;
+  background-color: #fff;
+}
+
+.form_btn:hover {
+  background-color: var(--primary2);
+  color: #fff;
+}
+
+.form_btn:active {
+  background-color: var(--primaryb500);
 }
 
 .divider {

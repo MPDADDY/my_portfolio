@@ -28,8 +28,6 @@
 
 # 📖 [my_portfolio] <a name="about-project"></a>
 
-> Describe your project in 1 or 2 sentences.
-
 **[Porfolio]**  wep page  will be showing some the projects the author have created.
 
 ## 🛠 Built With <a name="built-with"></a>
@@ -93,6 +91,13 @@ using the following commanda
 - GitHub: [@MPDADDY](https://github.com/MPDADDY)
 - Twitter: [@anoldmwawasi](https://twitter.com/anold_mwawasi)
 - LinkedIn: [anoldmwawasi](https://www.linkedin.com/in/anold-mwawasi/)
+
+
+👤 **Author2**
+
+- GitHub: [@githubhandle](https://github.com/richie1988)
+- Twitter: [@twitterhandle](https://twitter.com/RICHARDSIK51272)
+- LinkedIn: [LinkedIn](comming soon)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

@@ -110,15 +110,15 @@ ul.social_icons {
 
 /* work section **/
 section.work_section {
-  display: grid;
   grid-template-columns: auto;
+  display: grid;
   gap: 5rem;
   margin: 6rem 20px;
 }
 
 article.work {
-  display: grid;
   grid-template-columns: auto;
+  display: grid;
   gap: 12px;
   background-color: var(--white);
   border-radius: 16px;
@@ -152,12 +152,12 @@ div.canopy h5 {
   vertical-align: center;
 }
 
-section.work_section ul {
+.canopy_languages {
   display: flex;
-  flex-direction: row;
 }
 
 ul.languages li {
+  float: left;
   background-color: var(--primaryb50);
   padding: 4px 12px 4px 12px;
   border-radius: 8px;
@@ -190,6 +190,11 @@ div.canopy {
   flex-direction: row;
   justify-content: baseline;
   gap: 12px;
+}
+
+article.contact_me img {
+  width: 100%;
+  float: right;
 }
 
 section.work_section ul li > img {
@@ -309,4 +314,85 @@ ul.technologies_container-languages > li > p {
 
 .border_bottom {
   border-bottom: 2px solid #dfe1e6;
+}
+
+/* contact form */
+article.contact_me {
+  background-image: url(images/contact_form_shapes-mobile@2x.png);
+  background-size: 100% 92%;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: auto;
+  margin-top: 3rem;
+  border-top-left-radius: var(--radiusL);
+  background-color: var(--primaryb400);
+  padding: 5rem 20px 20px 20px;
+}
+
+article.contact_me h2 {
+  text-align: center;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 52px;
+  color: var(--white);
+}
+
+.form {
+  display: grid;
+  grid-template-columns: auto;
+  gap: 1rem;
+  border: none;
+}
+
+input[type=text],
+input[type=email],
+input[type=submit],
+input[type=textarea] {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+}
+
+textarea {
+  padding: 20px;
+  background-color: var(--white);
+  outline: none;
+  border: none;
+  resize: none;
+  border-radius: 8px;
+  text-align: left;
+}
+
+.form_btn {
+  max-width: 120px;
+  padding: 3px 14px;
+  margin-top: -2.5rem;
+  margin-bottom: 2rem;
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: var(--primaryb400);
+  text-decoration: none;
+  background-color: #fff;
+}
+
+.form_btn:hover {
+  background-color: var(--primary2);
+  color: #fff;
+}
+
+.form_btn:active {
+  background-color: var(--primaryb500);
+}
+
+.divider {
+  height: 2px;
+  width: 134px;
+  background-color: #0d151e;
+  margin: auto;
+  border: none;
 }

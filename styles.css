@@ -70,9 +70,7 @@ nav.bars i {
     width: 20px;
 }
 
-
 /** header section */
-
 .header {
     background-image: url(images/header-shapes\ mobile.png);
     background-color: var(--white);
@@ -110,9 +108,7 @@ ul.social_icons {
     gap: 1rem;
 }
 
-
 /* work section **/
-
 section.work_section {
     display: grid;
     grid-template-columns: auto;
@@ -156,13 +152,11 @@ div.canopy h5 {
     vertical-align: center;
 }
 
-
 /*section.work_section ul {
   display: flex;
   /*flex-direction:row;
 }
 */
-
 .canopy_languages {
     display: flex;
 }
@@ -175,7 +169,7 @@ ul.languages li {
     color: var(--primaryb400) !important;
 }
 
-ul.technologies_container-languages>li {
+ul.technologies_container-languages > li {
     display: grid;
     grid-template-columns: 1fr 3fr;
     text-align: left;
@@ -191,7 +185,7 @@ section.work_section ul li {
     margin-right: 12px;
 }
 
-section.work_section ul li>span {
+section.work_section ul li > span {
     font-size: 13px;
     font-weight: 600;
 }
@@ -203,7 +197,7 @@ div.canopy {
     gap: 12px;
 }
 
-section.work_section ul li>img {
+section.work_section ul li > img {
     width: 10px;
 }
 
@@ -221,7 +215,7 @@ article.work p {
     line-height: 24px;
 }
 
-section.work_section>ul.languages {
+section.work_section > ul.languages {
     display: flex;
     flex-direction: row;
     gap: 8px;
@@ -245,9 +239,7 @@ article.work button:hover {
     background-color: red;
 }
 
-
 /* about me */
-
 section.about_me {
     display: grid;
     grid-template-columns: auto;
@@ -279,9 +271,7 @@ button.my_resume {
     line-height: 24px;
 }
 
-
 /** technilogies */
-
 .technologies {
     margin-top: 1.6rem;
 }
@@ -315,7 +305,7 @@ article.contact_me p {
     padding: 12px 12px 1.2rem 12px;
 }
 
-ul.technologies_container-languages>li>p {
+ul.technologies_container-languages > li > p {
     font-size: 15px;
     font-weight: 500;
     line-height: 20px;
@@ -326,9 +316,7 @@ ul.technologies_container-languages>li>p {
     border-bottom: 2px solid #dfe1e6;
 }
 
-
 /* contact form */
-
 article.contact_me {
     background-image: url(images/contact_form_shapes-mobile@2x.png);
     background-size: 98% 92%;
@@ -353,5 +341,47 @@ article.contact_me h2 {
     display: grid;
     grid-template-columns: auto;
     gap: 1rem;
+    border: none;
+}
+
+input[type=text],
+input[type=email],
+input[type=submit],
+input[type=textarea] {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+}
+
+textarea {
+    padding: 20px;
+    background-color: var(--white);
+    outline: none;
+    border: none;
+    resize: none;
+    border-radius: 8px;
+    text-align: left;
+}
+
+.form_btn {
+    max-width: 120px;
+    padding: 3px 14px;
+    margin-top: -2.5rem;
+    margin-bottom: 2rem;
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    text-align: center;
+    color: var(--primaryb400);
+}
+
+.divider {
+    height: 2px;
+    width: 134px;
+    background-color: #0d151e;
+    margin: auto;
     border: none;
 }

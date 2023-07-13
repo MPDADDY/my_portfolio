@@ -20,6 +20,10 @@ html {
   font-size: 10px;
 }
 
+.padding_vertical {
+  padding: 0.8rem 0;
+}
+
 .desktop {
   display: none;
 }
@@ -469,6 +473,7 @@ textarea {
 
   .header h1 {
     font-size: 4.8rem;
+    margin-top: 14rem;
   }
 
   .bars {
@@ -483,6 +488,7 @@ textarea {
   .desktop_menu {
     display: flex;
     flex-direction: row;
+    align-items: center;
     gap: 2rem;
   }
 

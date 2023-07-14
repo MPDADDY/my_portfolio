@@ -92,6 +92,11 @@ using the following commanda
 - Twitter: [@anoldmwawasi](https://twitter.com/anold_mwawasi)
 - LinkedIn: [anoldmwawasi](https://www.linkedin.com/in/anold-mwawasi/)
 
+👤 **Author2**
+
+- GitHub: [@githubhandle](https://github.com/richie1988)
+- Twitter: [@twitterhandle](https://twitter.com/RICHARDSIK51272)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/richard-sikaonga-039940275/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

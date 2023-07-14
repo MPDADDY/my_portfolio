@@ -39,6 +39,7 @@ html {
   box-sizing: border-box;
   list-style-type: none;
   scroll-behavior: smooth;
+  transition: 300ms;
 }
 
 .margin_sm {
@@ -106,10 +107,9 @@ div.logo a {
   background-image: url(images/header-shapes\ mobile.png);
   background-color: var(--white);
   background-repeat: no-repeat;
-  background-size: contain;
-  padding: 20px;
+  background-size: cover;
+  padding: 4rem 2rem;
   width: 100%;
-  height: 100vh;
   border-bottom-left-radius: var(--radiusL);
 }
 
@@ -196,7 +196,7 @@ div.canopy h5 {
 ul.languages li {
   float: left;
   background-color: var(--primaryb50);
-  padding: 4px 12px 4px 12px;
+  padding: 0.8rem 1.2rem 0.8rem 1.2rem;
   border-radius: 8px;
   color: var(--primaryb400) !important;
 }
@@ -218,7 +218,7 @@ section.work_section ul li {
 }
 
 section.work_section ul li > span {
-  font-size: 13px;
+  font-size: 1.3rem;
   font-weight: 600;
 }
 
@@ -359,7 +359,9 @@ ul.technologies_container-languages > li > p {
 /* contact form */
 article.contact_me {
   background-image: url(images/contact_form_shapes-mobile@2x.png);
-  background-size: 100% 92%;
+  background-size: 60% 98%;
+  background-position-x: 90%;
+  background-position-y: -150%;
   background-repeat: no-repeat;
   width: 100%;
   height: auto;
@@ -443,6 +445,17 @@ textarea {
   border: none;
 }
 
+.my_resume:hover {
+  background-color: var(--primaryb500) !important;
+  color: var(--white);
+}
+
+.technologies_container-languages li:hover {
+  transform: scale(1.1);
+  background-color: aqua;
+  font-size: 2rem;
+}
+
 /* media queries */
 @media screen and (min-width: 375px) {
   .header_container {
@@ -453,15 +466,67 @@ textarea {
   .header {
     background-image: url(images/Header\ bg@2x.png);
     background-size: contain;
+    height: 100vh;
+  }
+
+  .header h1 {
+    font-size: 4.8rem;
+    margin-top: 4rem;
+  }
+
+  article.work p {
+    max-width: 500px;
+  }
+
+  article.work {
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+  }
+
+  .reverse {
+    display: flex;
+    flex-direction: row-reverse !important;
   }
 
   article.contact_me {
     background-image: url(images/contact\ form\ background\ shapes@2x.png);
-    background-size: contain;
+    background-size: cover;
+  }
+
+  .about_myself {
+    display: grid;
+    width: 100%;
+    margin: auto;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 3rem;
+  }
+
+  .technologies_container-languages {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 2rem;
+    width: auto;
+    max-width: 400px;
+  }
+
+  .mobile {
+    display: none;
+  }
+
+  .desktop {
+    display: inline-block;
+  }
+
+  ul.technologies_container-languages > li {
+    grid-template-columns: auto;
+    justify-content: center;
+    text-align: center;
+    padding: 4px;
   }
 
   .form {
-    width: 100%;
+    width: 80%;
   }
 }
 
@@ -519,16 +584,18 @@ textarea {
 
   .header {
     background-image: url(images/Header\ bg@2x.png);
-    background-size: contain;
+    background-size: cover;
   }
 
   article.work {
+    display: flex;
     flex-direction: row;
     justify-content: space-between;
     width: 80%;
     margin: auto;
     grid-row: 2rem;
-    gap: 2rem;
+    gap: 3rem;
+    padding: 2rem;
   }
 
   .reverse {
@@ -565,6 +632,7 @@ textarea {
 
   article.contact_me {
     background-image: url(images/contact\ form\ background\ shapes@2x.png);
+    background-size: contain;
   }
 
   .form {

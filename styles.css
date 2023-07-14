@@ -107,9 +107,9 @@ div.logo a {
   background-color: var(--white);
   background-repeat: no-repeat;
   background-size: contain;
-  padding: 20px;
+  padding: 4rem 2rem;
   width: 100%;
-  height: 100vh;
+  height: auto;
   border-bottom-left-radius: var(--radiusL);
 }
 
@@ -472,8 +472,16 @@ textarea {
     background-size: cover;
   }
 
-  .form {
+  .about_myself {
+    display: grid;
     width: 100%;
+    margin: auto;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+  }
+
+  .form {
+    width: 80%;
   }
 }
 

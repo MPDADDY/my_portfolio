@@ -93,21 +93,13 @@ using the following commanda
 - LinkedIn: [anoldmwawasi](https://www.linkedin.com/in/anold-mwawasi/)
 
 
-👤 **Author2**
-
-- GitHub: [@githubhandle](https://github.com/richie1988)
-- Twitter: [@twitterhandle](https://twitter.com/RICHARDSIK51272)
-- LinkedIn: [LinkedIn](comming soon)
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- FUTURE FEATURES -->
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **[mobile_version]**
-- [ ] **[Contact_form]**
-- [ ] **[Desktop_version]**
+- [ ] **[create_project_Dynamically_with_javascript]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

@@ -359,7 +359,9 @@ ul.technologies_container-languages > li > p {
 /* contact form */
 article.contact_me {
   background-image: url(images/contact_form_shapes-mobile@2x.png);
-  background-size: 100% 92%;
+  background-size: 60% 98%;
+  background-position-x: 90%;
+  background-position-y: -150%;
   background-repeat: no-repeat;
   width: 100%;
   height: auto;
@@ -455,9 +457,19 @@ textarea {
     background-size: contain;
   }
 
+  article.work {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .reverse {
+    display: flex;
+    flex-direction: row-reverse !important;
+  }
+
   article.contact_me {
     background-image: url(images/contact\ form\ background\ shapes@2x.png);
-    background-size: contain;
+    background-size: cover;
   }
 
   .form {
@@ -565,6 +577,7 @@ textarea {
 
   article.contact_me {
     background-image: url(images/contact\ form\ background\ shapes@2x.png);
+    background-size: cover;
   }
 
   .form {

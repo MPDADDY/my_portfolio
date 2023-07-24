@@ -228,7 +228,8 @@ div.canopy h5 {
   line-height: 16px;
   text-align: left;
   align-items: center;
-  vertical-align: center;
+
+  /* vertical-align: center; */
 }
 
 .canopy_languages {
@@ -267,7 +268,8 @@ section.work_section ul li > span {
 div.canopy {
   display: flex;
   flex-direction: row;
-  justify-content: baseline;
+
+  /* justify-content: baseline; */
   gap: 12px;
 }
 
@@ -640,7 +642,8 @@ textarea {
     justify-content: space-between;
     width: 80%;
     margin: auto;
-    grid-row: 2rem;
+
+    /* grid-row: 2rem; */
     gap: 3rem;
     padding: 2rem;
   }

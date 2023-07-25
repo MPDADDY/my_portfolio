@@ -54,7 +54,7 @@ html {
 .mobile_m {
   display: none;
   flex-direction: column;
-  position: relative;
+  position: fixed;
   background-color: rgba(60, 70, 255, 0.6);
   height: 100vh;
   width: 100%;
@@ -82,7 +82,14 @@ html {
 
 .mobile_menu li a {
   color: var(--white);
-  font-size: 2rem;
+  font-size: 3.2rem;
+  font-weight: 600;
+  line-height: 4px;
+  padding: 0.5rem 0.2rem;
+}
+
+.mobile_menu li {
+  margin: 0.8rem 0;
 }
 
 div.logo a {
@@ -103,8 +110,9 @@ div.logo a {
 }
 
 .nav_divider {
-  margin-bottom: 10px !important;
+  margin-bottom: -1rem !important;
   align-self: flex-end;
+  height: 5px !important;
 }
 
 body {
@@ -228,8 +236,6 @@ div.canopy h5 {
   line-height: 16px;
   text-align: left;
   align-items: center;
-
-  /* vertical-align: center; */
 }
 
 .canopy_languages {
@@ -268,8 +274,6 @@ section.work_section ul li > span {
 div.canopy {
   display: flex;
   flex-direction: row;
-
-  /* justify-content: baseline; */
   gap: 12px;
 }
 
@@ -642,8 +646,6 @@ textarea {
     justify-content: space-between;
     width: 80%;
     margin: auto;
-
-    /* grid-row: 2rem; */
     gap: 3rem;
     padding: 2rem;
   }

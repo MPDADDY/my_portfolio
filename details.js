@@ -14,7 +14,7 @@ const Articles = [
     articleClass: 'work reverse',
     mobileImg: 'images/Snapshoot Portfolio3.png',
     desktopImg: 'images/d2.png',
-    heading: 'Tonic',
+    heading: 'Multi-Post Stories',
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     desktopClass: 'desktop',
     reverseClass: 'reverse',
@@ -24,7 +24,7 @@ const Articles = [
     articleClass: 'work',
     mobileImg: 'images/Snapshoot Portfolio3.png',
     desktopImg: 'images/d3.png',
-    heading: 'Tonic',
+    heading: 'Facebook 360',
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     desktopClass: 'desktop',
     reverseClass: 'reverse',
@@ -34,7 +34,7 @@ const Articles = [
     articleClass: 'work reverse',
     mobileImg: 'images/Snapshoot Portfolio2.png',
     desktopImg: 'images/desktop7.png',
-    heading: 'Tonic',
+    heading: 'Uber Navigation',
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     desktopClass: 'desktop',
     reverseClass: 'reverse',
@@ -51,7 +51,7 @@ for(let i = 0; i < Articles.length; i += 1) {
                     <img class="desktop" src="${Articles[i].desktopImg}">
                 </div>
                 <div class="work_info">
-                    <h2>Tonic</h2>
+                    <h2>${Articles[i].heading}</h2>
                     <div class="canopy">
                         <div>
                             <h5>CANOPY</h5>

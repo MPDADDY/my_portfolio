@@ -50,6 +50,71 @@ html {
   display: none;
 }
 
+/* mobile menu */
+.mobile_m {
+  display: none;
+  flex-direction: column;
+  position: fixed;
+  background-color: rgba(60, 70, 255, 0.6);
+  height: 100vh;
+  width: 100%;
+  background-blend-mode: lighten;
+  top: 0;
+  backdrop-filter: blur(10px);
+  padding: 2rem;
+}
+
+.mobile_menu {
+  display: flex;
+  gap: 2rem;
+  margin-top: 8rem;
+  flex-direction: column;
+}
+
+.social a {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: left;
+  padding: 20px 0;
+  color: var(--primary2);
+}
+
+.mobile_menu li a {
+  color: var(--white);
+  font-size: 3.2rem;
+  font-weight: 600;
+  line-height: 4px;
+  padding: 0.5rem 0.2rem;
+}
+
+.mobile_menu li {
+  margin: 0.8rem 0;
+}
+
+div.logo a {
+  font-size: var(--small_font);
+  font-weight: 700;
+  color: var(--primary);
+}
+
+.mobile_menu li a:hover {
+  color: var(--primaryb500);
+}
+
+.close_btn {
+  width: 3rem;
+  position: absolute;
+  top: 2rem;
+  right: 1rem;
+}
+
+.nav_divider {
+  margin-bottom: -1rem !important;
+  align-self: flex-end;
+  height: 5px !important;
+}
+
 body {
   background-color: var(--body-background);
   font-family: 'Poppins', sans-serif;
@@ -79,21 +144,6 @@ div.logo-container {
 
 div.logo {
   width: 82px;
-}
-
-.social a {
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 24px;
-  text-align: left;
-  padding: 20px 0;
-  color: var(--primary2);
-}
-
-div.logo a {
-  font-size: var(--small_font);
-  font-weight: 700;
-  color: var(--primary);
 }
 
 .bars i {
@@ -186,7 +236,6 @@ div.canopy h5 {
   line-height: 16px;
   text-align: left;
   align-items: center;
-  vertical-align: center;
 }
 
 .canopy_languages {
@@ -225,7 +274,6 @@ section.work_section ul li > span {
 div.canopy {
   display: flex;
   flex-direction: row;
-  justify-content: baseline;
   gap: 12px;
 }
 
@@ -457,7 +505,7 @@ textarea {
 }
 
 /* media queries */
-@media screen and (min-width: 375px) {
+@media screen and (min-width: 377px) {
   .header_container {
     width: 90%;
     margin: auto;
@@ -532,7 +580,12 @@ textarea {
 
 /**  media queries */
 @media screen and (min-width: 768px) {
-  .mobile {
+  .mobile,
+  .mobile_menu {
+    display: none;
+  }
+
+  .mobile_m {
     display: none;
   }
 
@@ -593,7 +646,6 @@ textarea {
     justify-content: space-between;
     width: 80%;
     margin: auto;
-    grid-row: 2rem;
     gap: 3rem;
     padding: 2rem;
   }

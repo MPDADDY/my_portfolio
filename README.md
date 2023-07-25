@@ -86,17 +86,17 @@ using the following commanda
 
 ## 👥 Authors <a name="authors"></a>
 
-👤 **Author1**
+👤 **Anold Mwagharo**
 
 - GitHub: [@MPDADDY](https://github.com/MPDADDY)
 - Twitter: [@anoldmwawasi](https://twitter.com/anold_mwawasi)
 - LinkedIn: [anoldmwawasi](https://www.linkedin.com/in/anold-mwawasi/)
 
-👤 **Author2**
 
-- GitHub: [@githubhandle](https://github.com/richie1988)
-- Twitter: [@twitterhandle](https://twitter.com/RICHARDSIK51272)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/richard-sikaonga-039940275/)
+👤 **Austin Obimbo**
+
+- GitHub: [@githubhandle](https://github.com/Obimbo07)
+- LinkedIn: [LinkedIn](https://linkedin.com/in/Austinobimbo)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

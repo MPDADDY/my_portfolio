@@ -711,3 +711,67 @@ textarea {
     display: inline-block;
   }
 }
+
+/*  popup styling **/
+.desktopPopup {
+  background-color: var(--white);
+  position: fixed !important;
+  z-index: 10;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 1rem;
+}
+
+.desktopPopup_header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.desktopPopup_header h2 {
+  font-weight: 700;
+  font-size: 40px;
+  color: var(--newtral-theme);
+}
+
+.desktopPopup_header button {
+  padding: 20px;
+  font-size: 40px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.desktopPopup_descriptions {
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: space-between;
+  padding-bottom: 3rem;
+}
+
+.popup-links {
+  color: var(--primaryb400) !important;
+  width: 141px;
+height: 40px;
+left: 159px;
+padding: 8px 12px 8px 12px;
+border-radius: 8px;
+border: 1px;
+gap: 10px;
+
+}
+.overlay {
+  position: fixed;
+  opacity: 0.9;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #cac7d0;
+  pointer-events: all;
+  background-blend-mode: lighten;
+  backdrop-filter: blur(7px);
+  z-index: 4;
+}

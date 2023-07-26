@@ -136,17 +136,6 @@ function activateModalAticles() {
   }
 }
 
-function pop() {
-  alert('we are going to close popup')
-}
-
-/*function deactivatePopup() {
-      for (let i = 0; i < modals.length; i+= 1) {
-        modals[i].style.display = 'none'  
-  }
-   console.log('CLOSE POPUP WINDOW')
-}*/
-
 const overlay = document.getElementById('overlay');
 function activateModal() {
   overlay.style.display = 'block'
@@ -168,21 +157,3 @@ for (let i = 0; i < seeBtns.length; i+= 1) {
 for(let i = 0; i < close.length; i += 1) {
   close[i].addEventListener('click',deactivateModal)
 }
-
-
-
-
-
-
-
-/*const modals = document.getElementsByClassName('desktopPopup');
-let overlay = document.getElementById('overlay');
-function activateModal() {
-  if(workArticle[i] === modals[i]) {
-    modals[i].style.display = 'block'
-    overlay.style.display = 'block'
-  }
-}
-
-const workArticle = document.getElementsByClassName('work');
-workArticle[i].addEventListener('click', activateModal)*/

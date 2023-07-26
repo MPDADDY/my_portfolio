@@ -35,13 +35,12 @@ const Articles = [
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     desktopClass: 'desktop',
     reverseClass: 'reverse',
-  }
-]
+  },
+];
 
 for (let i = 0; i < Articles.length; i += 1) {
   const myArticles = document.getElementById('work_section').innerHTML;
-  workSection.innerHTML=
-    `<article class="${Articles[i].articleClass}">
+  workSection.innerHTML=`<article class="${Articles[i].articleClass}">
                 <div class="work_img">
                     <img class="mobile" src="${Articles[i].mobileImg}" alt="work screenshot">
                     <img class="desktop" src="${Articles[i].desktopImg}">
@@ -125,7 +124,7 @@ const close = document.getElementsByClassName('closePopup');
 function activateModalAticles() {
   for (let i = 0; i < modals.length; i += 1) {
     modals[i].style.display = 'block';
-  };
+  }
 }
 
 const overlay = document.getElementById('overlay');
@@ -136,13 +135,13 @@ function activateModal() {
 
 function deactivateModal() {
   overlay.style.display = 'none';
-   for (let i = 0; i < modals.length; i += 1) {
+  for (let i = 0; i < modals.length; i += 1) {
     modals[i].style.display = 'none';
   }
 }
 
 const seeBtns = document.getElementsByClassName('see');
-for (let i = 0; i < seeBtns.length; i+= 1) {
+for (let i = 0; i < seeBtns.length; i += 1) {
   seeBtns[i].addEventListener('click', activateModal);
 }
 

@@ -1,5 +1,4 @@
 const workSection = document.getElementById('work_section');
-const workArticles = document.getElementsByClassName('work');
 const Articles = [
   {
     articleClass: 'work',
@@ -9,7 +8,6 @@ const Articles = [
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     desktopClass: 'desktop',
     reverseClass: 'reverse',
-    
   },
   {
     articleClass: 'work reverse',
@@ -19,7 +17,6 @@ const Articles = [
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     desktopClass: 'desktop',
     reverseClass: 'reverse',
-    
   },
   {
     articleClass: 'work',
@@ -29,7 +26,6 @@ const Articles = [
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     desktopClass: 'desktop',
     reverseClass: 'reverse',
-    
   },
   {
     articleClass: 'work reverse',
@@ -39,13 +35,12 @@ const Articles = [
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     desktopClass: 'desktop',
     reverseClass: 'reverse',
-    
   }
 ]
 
-for(let i = 0; i < Articles.length; i += 1) {
+for (let i = 0; i < Articles.length; i += 1) {
   const myArticles = document.getElementById('work_section').innerHTML;
-  workSection.innerHTML =
+  workSection.innerHTML=
     `<article class="${Articles[i].articleClass}">
                 <div class="work_img">
                     <img class="mobile" src="${Articles[i].mobileImg}" alt="work screenshot">
@@ -119,41 +114,38 @@ for(let i = 0; i < Articles.length; i += 1) {
             </div>
         </div>
         <div id="overlay" class="overlay"></div>
-        <!--pop up-->
-            ${myArticles }`;
+        <!--pop up-->${myArticles }`;
 }
 
 /** popup window */
 const modals = document.getElementsByClassName('desktopPopup');
 const close = document.getElementsByClassName('closePopup');
 
-
-
 /** modals loop */
 function activateModalAticles() {
-  for (let i = 0; i < modals.length; i+= 1) {
-    modals[i].style.display = 'block'
-  }
+  for (let i = 0; i < modals.length; i += 1) {
+    modals[i].style.display = 'block';
+  };
 }
 
 const overlay = document.getElementById('overlay');
 function activateModal() {
-  overlay.style.display = 'block'
+  overlay.style.display = 'block';
   activateModalAticles();
 }
 
 function deactivateModal() {
-  overlay.style.display = 'none'
-   for (let i = 0; i < modals.length; i+= 1) {
-    modals[i].style.display = 'none'
+  overlay.style.display = 'none';
+   for (let i = 0; i < modals.length; i += 1) {
+    modals[i].style.display = 'none';
   }
 }
 
 const seeBtns = document.getElementsByClassName('see');
 for (let i = 0; i < seeBtns.length; i+= 1) {
-  seeBtns[i].addEventListener('click',activateModal)
+  seeBtns[i].addEventListener('click', activateModal);
 }
 
-for(let i = 0; i < close.length; i += 1) {
-  close[i].addEventListener('click',deactivateModal)
+for (let i = 0; i < close.length; i += 1) {
+  close[i].addEventListener('click', deactivateModal);
 }

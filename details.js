@@ -8,6 +8,9 @@ const Articles = [
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     desktopClass: 'desktop',
     reverseClass: 'reverse',
+    liveLink: 'https://mpdaddy.github.io/my_portfolio/',
+    liveSource: 'https://github.com/MPDADDY/my_portfolio/blob/details-popup-window/details.js',
+    technologies: ['HTML', 'CSS', 'JavaScript'],
   },
   {
     articleClass: 'work reverse',
@@ -17,6 +20,9 @@ const Articles = [
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     desktopClass: 'desktop',
     reverseClass: 'reverse',
+    liveLink: 'https://mpdaddy.github.io/my_portfolio/',
+    liveSource: 'https://github.com/MPDADDY/my_portfolio/blob/details-popup-window/details.js',
+    technologies: ['HTML', 'CSS', 'JavaScript'],
   },
   {
     articleClass: 'work',
@@ -26,6 +32,9 @@ const Articles = [
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     desktopClass: 'desktop',
     reverseClass: 'reverse',
+    liveLink: 'https://mpdaddy.github.io/my_portfolio/',
+    liveSource: 'https://github.com/MPDADDY/my_portfolio/blob/details-popup-window/details.js',
+    technologies: ['HTML', 'CSS', 'JavaScript'],
   },
   {
     articleClass: 'work reverse',
@@ -34,6 +43,9 @@ const Articles = [
     heading: 'Uber Navigation',
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
     desktopClass: 'desktop',
+    technologies: ['HTML', 'CSS', 'JavaScript'],
+    liveLink: 'https://mpdaddy.github.io/my_portfolio/',
+    liveSource: 'https://github.com/MPDADDY/my_portfolio/blob/details-popup-window/details.js',
     reverseClass: 'reverse',
   },
 ];
@@ -62,11 +74,11 @@ for (let i = 0; i < Articles.length; i += 1) {
                             </li>
                         </ul>
                     </div>
-                    <p>A daily selection of privately personalized reads; no accounts or sign-ups required.</p>
+                    <p>${Articles[i].description}</p>
                     <ul class="languages">
-                        <li>HTML</li>
-                        <li>CSS</li>
-                        <li>JavaScript</li>
+                        <li>${Articles[i].technologies[0]}</li>
+                        <li>${Articles[i].technologies[1]}</li>
+                        <li>${Articles[i].technologies[2]}</li>
                     </ul>
                     <button class= "see" type="button">See Project</button>
                 </div>
@@ -98,8 +110,7 @@ for (let i = 0; i < Articles.length; i += 1) {
             </div>
             <div class="desktopPopup_descriptions">
                 <div>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident, sequi fuga veniam labore
-                        ullam eos ducimus magni dolor facere saepe.</p>
+                    <p>A daily selection of privately personalized reads; no accounts or sign-ups required.</p>
                 </div>
                 <div>
                     <ul class="languages">
@@ -107,8 +118,10 @@ for (let i = 0; i < Articles.length; i += 1) {
                         <li>CSS</li>
                         <li>JavaScript</li>
                     </ul>
-                    <button class="popup-links" type="button">see live</button>
-                    <button class="popup-links" type="button">See source</button>
+                    <div>
+                      <button class="popup-links" type="button">see live</button>
+                      <button class="popup-links" type="button">See source</button>
+                    </div>
                 </div>
             </div>
         </div>

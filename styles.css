@@ -247,6 +247,14 @@ div.canopy h5 {
 
 .canopy_languages {
   display: flex;
+  align-items: center;
+}
+
+.canopy_languages li {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  align-items: center;
 }
 
 ul.languages li {
@@ -568,11 +576,25 @@ textarea {
   width: 141px;
   height: 40px;
   left: 159px;
+  margin-top: 2rem;
   padding: 8px 12px 8px 12px;
   border-radius: 8px;
   gap: 10px;
   border: 0.1rem solid var(--primaryb400);
+  font-weight: 500;
   cursor: pointer;
+  font-size: 1.5rem;
+  background-color: var(--white);
+}
+
+.popup-links:hover {
+  color: var(--white) !important;
+  background-color: var(--primaryb500);
+}
+
+.popup-links:active {
+  background-color: var(--newtral-theme);
+  color: var(--white);
 }
 
 .overlay {
@@ -676,9 +698,9 @@ textarea {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    padding: 1rem;
+    padding: 0.4rem;
     width: 100%;
-    max-width: 40rem;
+    max-width: 60.5rem;
     max-height: 98vh;
   }
 

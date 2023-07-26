@@ -40,7 +40,7 @@ const Articles = [
 
 for (let i = 0; i < Articles.length; i += 1) {
   const myArticles = document.getElementById('work_section').innerHTML;
-  workSection.innerHTML=`<article class="${Articles[i].articleClass}">
+  workSection.innerHTML = `<article class="${Articles[i].articleClass}">
                 <div class="work_img">
                     <img class="mobile" src="${Articles[i].mobileImg}" alt="work screenshot">
                     <img class="desktop" src="${Articles[i].desktopImg}">
@@ -113,7 +113,7 @@ for (let i = 0; i < Articles.length; i += 1) {
             </div>
         </div>
         <div id="overlay" class="overlay"></div>
-        <!--pop up-->${myArticles }`;
+        <!--pop up-->${myArticles}`;
 }
 
 /** popup window */

@@ -1,4 +1,5 @@
 const workSection = document.getElementById('work_section');
+const workArticles = document.getElementsByClassName('work');
 const Articles = [
   {
     articleClass: 'work',
@@ -73,8 +74,115 @@ for(let i = 0; i < Articles.length; i += 1) {
                         <li>CSS</li>
                         <li>JavaScript</li>
                     </ul>
-                    <button type="button">See Project</button>
+                    <button class= "see" type="button">See Project</button>
                 </div>
 
-            </article>${myArticles}`;
+            </article>
+             <!--pop up-->
+        <div class="desktopPopup">
+            <div class="desktopPopup_header">
+                <h2>Tonic</h2>
+                <button type='button' id= "closePopup" class="closePopup">x</button>
+            </div>
+            <div class="canopy ">
+                <div>
+                    <h5>CANOPY</h5>
+                </div>
+                <ul class="canopy_languages">
+                    <li>
+                        <img class="smallImg" src="images/Counter.png" alt="counter image ">
+                        <span>Backend dev</span>
+                    </li>
+                    <li>
+                        <img class="smallImg" src="images/Counter.png" alt="counter image ">
+                        <span>2015</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="popupImg">
+                <img src="${Articles[i].desktopImg}" alt="popup image">r
+            </div>
+            <div class="desktopPopup_descriptions">
+                <div>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident, sequi fuga veniam labore
+                        ullam eos ducimus magni dolor facere saepe.</p>
+                </div>
+                <div>
+                    <ul class="languages">
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                    </ul>
+                    <button class="popup-links" type="button">see live</button>
+                    <button class="popup-links" type="button">See source</button>
+                </div>
+            </div>
+        </div>
+        <div id="overlay" class="overlay"></div>
+        <!--pop up-->
+            ${myArticles }`;
 }
+
+/** popup window */
+const modals = document.getElementsByClassName('desktopPopup');
+const close = document.getElementsByClassName('closePopup');
+
+
+
+/** modals loop */
+function activateModalAticles() {
+  for (let i = 0; i < modals.length; i+= 1) {
+    modals[i].style.display = 'block'
+  }
+}
+
+function pop() {
+  alert('we are going to close popup')
+}
+
+/*function deactivatePopup() {
+      for (let i = 0; i < modals.length; i+= 1) {
+        modals[i].style.display = 'none'  
+  }
+   console.log('CLOSE POPUP WINDOW')
+}*/
+
+const overlay = document.getElementById('overlay');
+function activateModal() {
+  overlay.style.display = 'block'
+  activateModalAticles();
+}
+
+function deactivateModal() {
+  overlay.style.display = 'none'
+   for (let i = 0; i < modals.length; i+= 1) {
+    modals[i].style.display = 'none'
+  }
+}
+
+const seeBtns = document.getElementsByClassName('see');
+for (let i = 0; i < seeBtns.length; i+= 1) {
+  seeBtns[i].addEventListener('click',activateModal)
+}
+
+for(let i = 0; i < close.length; i += 1) {
+  close[i].addEventListener('click',deactivateModal)
+}
+
+
+
+
+
+
+
+/*const modals = document.getElementsByClassName('desktopPopup');
+let overlay = document.getElementById('overlay');
+function activateModal() {
+  if(workArticle[i] === modals[i]) {
+    modals[i].style.display = 'block'
+    overlay.style.display = 'block'
+  }
+}
+
+const workArticle = document.getElementsByClassName('work');
+workArticle[i].addEventListener('click', activateModal)*/

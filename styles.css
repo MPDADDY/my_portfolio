@@ -578,6 +578,33 @@ textarea {
   .form {
     width: 80%;
   }
+
+    .desktopPopup {
+      display: none;
+      background-color: var(--white);
+      position: fixed !important;
+      z-index: 10;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      padding: 1rem;
+      width: 100%;
+      max-width: 40rem;
+      max-height: 98vh;
+    }
+
+        .popupImg img {
+          max-width: 100%;
+          height: 30rem !important;
+          margin: auto;
+        }
+
+.desktopPopup_descriptions {
+  display: grid;
+  grid-template-columns: auto auto !important;
+  justify-content: space-between;
+  padding-bottom: 3rem;
+}
 }
 
 /**  media queries */
@@ -710,10 +737,31 @@ textarea {
   .desktop {
     display: inline-block;
   }
+
+  .desktopPopup {
+    display: none;
+    background-color: var(--white);
+    position: fixed !important;
+    z-index: 10;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 1rem;
+    width: 100%;
+    max-width: 60rem;
+  }
+
+    .desktopPopup_descriptions {
+      display: grid;
+      grid-template-columns: auto auto;
+      justify-content: space-between;
+      padding-bottom: 3rem;
+    }
 }
 
 /*  popup styling **/
 .desktopPopup {
+  display: none;
   background-color: var(--white);
   position: fixed !important;
   z-index: 10;
@@ -721,6 +769,9 @@ textarea {
   left: 50%;
   transform: translate(-50%, -50%);
   padding: 1rem;
+  width: 100%;
+  max-width: 60rem;
+  max-height: 98vh;
 }
 
 .desktopPopup_header {
@@ -746,23 +797,45 @@ textarea {
 
 .desktopPopup_descriptions {
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: auto;
   justify-content: space-between;
   padding-bottom: 3rem;
+}
+
+.desktopPopup_descriptions p {
+  color: #344563;
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+
+.popupImg {
+  text-align: center;
+}
+
+.popupImg img {
+  max-width: 50rem;
+  margin: auto;
+}
+
+.smallImg {
+  width: 5px;
+  margin: 0 4px;
 }
 
 .popup-links {
   color: var(--primaryb400) !important;
   width: 141px;
-height: 40px;
-left: 159px;
-padding: 8px 12px 8px 12px;
-border-radius: 8px;
-border: 1px;
-gap: 10px;
-
+  height: 40px;
+  left: 159px;
+  padding: 8px 12px 8px 12px;
+  border-radius: 8px;
+  gap: 10px;
+  border: 0.1rem solid var(--primaryb400);
+  cursor: pointer;
 }
+
 .overlay {
+  display: none;
   position: fixed;
   opacity: 0.9;
   top: 0;
@@ -770,7 +843,7 @@ gap: 10px;
   right: 0;
   bottom: 0;
   background-color: #cac7d0;
-  pointer-events: all;
+  /*pointer-events: none;*/
   background-blend-mode: lighten;
   backdrop-filter: blur(7px);
   z-index: 4;

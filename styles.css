@@ -81,6 +81,11 @@ html {
   color: var(--primary2);
 }
 
+.popup-links a {
+  color: var(--primaryb500);
+  display: inline-block;
+}
+
 .mobile_menu li a {
   color: var(--white);
   font-size: 3.2rem;
@@ -99,6 +104,10 @@ div.logo a {
   color: var(--primary);
 }
 
+.popup-links a:hover {
+  color: var(--white);
+}
+
 .mobile_menu li a:hover {
   color: var(--primaryb500);
 }
@@ -108,6 +117,13 @@ div.logo a {
   position: absolute;
   top: 2rem;
   right: 1rem;
+}
+
+.closePopup {
+  font-size: 16px;
+  color: #67798e;
+  width: 16px;
+  margin-right: 1.5rem;
 }
 
 .nav_divider {
@@ -223,8 +239,10 @@ article.work {
 
 .desktopPopup_header h2 {
   font-weight: 700;
-  font-size: 40px;
+  font-size: 32px;
   color: var(--newtral-theme);
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 article.work h2 {
@@ -542,10 +560,13 @@ textarea {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  padding: 1rem;
+  padding: 1.6rem;
   width: 100%;
-  max-width: 60rem;
+  max-width: 365px;
   max-height: 98vh;
+  margin-right: 15px;
+  border-radius: 16px;
+  border: 1px solid #dfe1e6;
 }
 
 .desktopPopup_header {
@@ -609,6 +630,10 @@ textarea {
   background-blend-mode: lighten;
   backdrop-filter: blur(7px);
   z-index: 4;
+}
+
+.popicon {
+  width: 1.5rem;
 }
 
 /* media queries */
@@ -700,14 +725,27 @@ textarea {
     transform: translate(-50%, -50%);
     padding: 0.4rem;
     width: 100%;
-    max-width: 60.5rem;
+    max-width: 60rem;
     max-height: 98vh;
+    margin-right: 15px;
+    border-radius: 16px;
+    border: 1px solid #dfe1e6;
+  }
+
+  .popup-links {
+    margin-top: 0;
   }
 
   .popupImg img {
     max-width: 100%;
-    height: 30rem !important;
+    width: 20rem;
+    height: auto;
     margin: auto;
+  }
+
+  .desktopPopup_descriptions_lang_grid {
+    display: grid;
+    grid-template-columns: auto;
   }
 
   .desktopPopup_descriptions {
@@ -734,6 +772,10 @@ textarea {
     margin-top: 14rem;
   }
 
+  .desktopPopup_header h2 {
+    font-size: 4rem;
+  }
+
   .bars {
     display: none;
   }
@@ -753,6 +795,15 @@ textarea {
   .desktop_menu li a {
     color: var(--newtrals2);
     font-size: 1.5rem;
+  }
+
+  .border_top {
+    border-top: 1px solid rgba(60, 70, 255, 0.4);
+    height: 1px;
+    width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1rem;
   }
 
   .desktop_menu li a:hover {
@@ -811,6 +862,13 @@ textarea {
     max-width: 400px;
   }
 
+  .popupImg img {
+    max-width: 50rem;
+    width: 100%;
+    height: auto;
+    margin: auto;
+  }
+
   ul.technologies_container-languages img {
     width: 70px;
   }
@@ -862,9 +920,13 @@ textarea {
     max-width: 60rem;
   }
 
+  .popup-links {
+    margin-top: 2rem;
+  }
+
   .desktopPopup_descriptions {
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: auto auto !important;
     justify-content: space-between;
     padding-bottom: 3rem;
   }

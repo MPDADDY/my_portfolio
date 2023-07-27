@@ -87,10 +87,10 @@ for (let i = 0; i < Articles.length; i += 1) {
              <!--pop up-->
         <div class="desktopPopup">
             <div class="desktopPopup_header">
-                <h2>Tonic</h2>
+                <h2>${Articles[i].heading}</h2>
                 <button type='button' id= "closePopup" class="closePopup">x</button>
             </div>
-            <div class="canopy ">
+            <div class="canopy">
                 <div>
                     <h5>CANOPY</h5>
                 </div>
@@ -110,17 +110,18 @@ for (let i = 0; i < Articles.length; i += 1) {
             </div>
             <div class="desktopPopup_descriptions">
                 <div>
-                    <p>A daily selection of privately personalized reads; no accounts or sign-ups required.</p>
+                    <p>${Articles[i].description}</p>
                 </div>
-                <div>
+                <div class="desktopPopup_descriptions_lang_grid">
                     <ul class="languages">
                         <li>HTML</li>
                         <li>CSS</li>
                         <li>JavaScript</li>
                     </ul>
+                    <div class="border_top"></div>
                     <div>
-                      <button class="popup-links" type="button">see live</button>
-                      <button class="popup-links" type="button">See source</button>
+                      <button class="popup-links" type="button"><a href="${Articles[i].liveLink}" target= 'blank'>See live</a><img class="popicon" src="images/seeLIve.png" alt="seeLIve icon"></button>
+                      <button class="popup-links" type="button"><a href="${Articles[i].liveSource}" target = 'blank'>See source</a><img class="popicon" src="/images/Normal Button/Secondary/Icons/Icon -GitHub.png" alt="github icon"></button>
                     </div>
                 </div>
             </div>

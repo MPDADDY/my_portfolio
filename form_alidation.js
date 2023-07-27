@@ -6,12 +6,13 @@ function emailValidation() {
   const email = document.getElementById('email').value;
   if (email.toLowerCase() !== email) {
     emailErr.innerHTML = 'Input the email in lowercase';
+    return false; // Prevent form submission
   }
-  return false;
+  return true;
 }
+
 submit.addEventListener('click', (event) => {
   if (!emailValidation()) {
-    event.preventDefault();
+    event.preventDefault(); // Prevent form submission if emailValidation returns false
   }
 });
-submit.addEventListener('click', emailValidation);

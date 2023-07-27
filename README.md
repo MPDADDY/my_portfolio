@@ -66,7 +66,7 @@ To get a local copy up and running, follow these steps.
 
 In order to run this project you need:
 
-git and code editor of your choice in your  local environment.
+  git and code editor of your choice in your  local environment.
 
 
 ### Setup
@@ -96,7 +96,7 @@ using the following commanda
 👤 **Austin Obimbo**
 
 - GitHub: [@githubhandle](https://github.com/Obimbo07)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/Austinobimbo)
+- LinkedIn: [LinkedIn](https://linkedin.com/in/austin-obimbo)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

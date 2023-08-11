@@ -18,7 +18,7 @@ window.onload = () => {
   const data = JSON.parse(localStorage.getItem('formInputsData'));
   if (data) {
     userName.value = data.name;
-    email.value = data.email;
+    email.value = data.emai;
     userMessage.value = data.message;
   }
 };
